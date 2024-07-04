@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "farmersdream",
+  "version": "${version}",
+  "name": "FarmersDream",
+  "description": "",
+  "authors": ["Phoenixfirewingz","kelvindeans2007"],
+  "contact": {
+    "repo": "https://github.com/luket/FarmersDream"
+  },
+  "license": "BSD-3-Clause",
+  "icon": "assets/farmersdream/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.pheonixfirewingz.farmersdream.FarmersDream"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

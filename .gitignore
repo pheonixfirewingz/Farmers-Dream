@@ -19,6 +19,20 @@
 *.tar.gz
 *.rar
 
+.idea
+.gradle
+build
+run/.fabric
+run/config
+run/crash-reports
+run/data
+run/logs
+run/resourcepacks
+run/resources
+run/saves
+run/options.txt
+run/usercache.json
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
