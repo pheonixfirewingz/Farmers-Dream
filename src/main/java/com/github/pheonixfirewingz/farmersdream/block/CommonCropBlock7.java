@@ -11,7 +11,6 @@ public class CommonCropBlock7 extends CropBlock {
         super(settings);
         SEED = seed;
     }
-
     @Override
     protected ItemConvertible getSeedsItem() {
         return SEED;
