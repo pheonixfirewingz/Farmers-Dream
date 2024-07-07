@@ -1,11 +1,8 @@
 {
   "item.farmersdream.edible_seeds_garlic" :"Garlic",
   "item.farmersdream.edible_seeds_onion" :"Onion",
-  "item.farmersdream.seeds_radish" :"Radish",
-  "item.farmersdream.edible_seeds_taro" :"Taro",
-  "item.farmersdream.edible_seeds_yam" :"Yam",
-  "item.farmersdream.edible_seeds_turnip" :"Turnip",
-  "item.farmersdream.edible_seeds_cassava" :"Cassava",
-  "item.farmersdream.food_parsnip" :"Parsnip",
-  "item.farmersdream.edible_seeds_rice" :"Rice",
+  "item.farmersdream.food_cucumber" :"Cucumber",
+  "item.farmersdream.seeds_cucumber" :"Cucumber Seeds",
+  "item.farmersdream.food_tomato" :"Tomato",
+  "item.farmersdream.seeds_tomato" :"Tomato Seeds"
 }
