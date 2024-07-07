@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "farmersdream:block/crop_kokumo_stage3"
+  }
+}

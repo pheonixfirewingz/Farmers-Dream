@@ -28,4 +28,5 @@ public class FarmersDreamFood {
     public static final FoodComponent YAM = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent TURNIP = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent CASSAVA = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
+    public static final FoodComponent BAIL = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
 }

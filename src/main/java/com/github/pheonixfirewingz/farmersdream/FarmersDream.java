@@ -1,6 +1,6 @@
 package com.github.pheonixfirewingz.farmersdream;
 
-import com.github.pheonixfirewingz.farmersdream.block.FarmersDreamBlock;
+import com.github.pheonixfirewingz.farmersdream.world.block.FarmersDreamBlock;
 import com.github.pheonixfirewingz.farmersdream.world.item.FarmersDreamItems;
 import net.fabricmc.api.ModInitializer;
 

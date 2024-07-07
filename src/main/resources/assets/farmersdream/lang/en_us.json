@@ -4,5 +4,7 @@
   "item.farmersdream.food_cucumber" :"Cucumber",
   "item.farmersdream.seeds_cucumber" :"Cucumber Seeds",
   "item.farmersdream.food_tomato" :"Tomato",
-  "item.farmersdream.seeds_tomato" :"Tomato Seeds"
+  "item.farmersdream.seeds_tomato" :"Tomato Seeds",
+  "item.farmersdream.food_bail" :"Bail",
+  "item.farmersdream.seeds_bail" :"Bail Seeds"
 }
