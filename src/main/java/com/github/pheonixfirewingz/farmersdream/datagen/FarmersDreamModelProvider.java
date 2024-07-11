@@ -46,7 +46,6 @@ public class FarmersDreamModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(CROP_SWEET_POTATO, CommonCrop.AGE,0,1,2,3,4,5,6,7);
         blockStateModelGenerator.registerCrop(CROP_MINT, CommonCrop.AGE,0,1,2,3,4,5,6,7);
         blockStateModelGenerator.registerCrop(CROP_OAT, CommonCrop.AGE,0,1,2,3,4,5,6,7);
-
     }
 
     @Override
@@ -73,5 +72,6 @@ public class FarmersDreamModelProvider extends FabricModelProvider {
         itemModelGenerator.register(TARO, Models.GENERATED);
         itemModelGenerator.register(MINT, Models.GENERATED);
         itemModelGenerator.register(OAT, Models.GENERATED);
+        itemModelGenerator.register(HORSE_RADISH, Models.GENERATED);
     }
 }

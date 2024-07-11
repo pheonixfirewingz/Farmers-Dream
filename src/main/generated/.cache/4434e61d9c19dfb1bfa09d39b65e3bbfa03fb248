@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-11T02:57:34.315161859	FarmersDream/Model Definitions
+// 1.20.1	2024-07-11T12:58:58.970120706	FarmersDream/Model Definitions
 948c9779e595082dc89232933558d34fc3a6ddff assets/farmersdream/models/block/crop_rutabaga_stage5.json
 003d3cc45e7b9fe6ac17f1e1e6b60b4ee6a155b3 assets/farmersdream/models/block/crop_horse_radish_stage5.json
 2ca1c310dbb04dae7ed1c9a5e7a24fceebee5ccc assets/farmersdream/models/block/crop_garlic_stage2.json
@@ -103,6 +103,7 @@ ad2f02eb4d5c23cfb289462f19b4af032adf7d8f assets/farmersdream/models/item/edible_
 79e631d4998ec6613b5f4302fc9dba8bb415a1b3 assets/farmersdream/blockstates/crop_rutabaga.json
 95aee4e126cfb6c7141166be36b558bb893a9bd4 assets/farmersdream/blockstates/crop_mint.json
 9528c8f784da61263ae493b355c063f11ba5efdc assets/farmersdream/models/block/crop_turnip_stage5.json
+3446ff9c74591a093bbceb79006c186286490f83 assets/farmersdream/models/item/food_horse_radish.json
 8be943894ecb217d0ef74486f935293a55cfbf22 assets/farmersdream/models/block/crop_bail_stage1.json
 0e78ea48dd50584e95cb39e625ddd44ac648bf22 assets/farmersdream/models/block/crop_cotton_stage4.json
 f523f6fa14b5d75218bc5b5fb55c35548a18c622 assets/farmersdream/models/block/crop_parsnip_stage4.json
