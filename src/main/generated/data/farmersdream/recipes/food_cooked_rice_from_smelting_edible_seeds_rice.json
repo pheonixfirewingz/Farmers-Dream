@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "item.farmersdream.food_cooked_rice",
+  "ingredient": {
+    "item": "farmersdream:edible_seeds_rice"
+  },
+  "result": "farmersdream:food_cooked_rice"
+}

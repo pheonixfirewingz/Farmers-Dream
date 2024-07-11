@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_food_lettuce": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdream:food_lettuce"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdream:seeds_lettuce"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_food_lettuce",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdream:seeds_lettuce"
+    ]
+  },
+  "sends_telemetry_event": false
+}

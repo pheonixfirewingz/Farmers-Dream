@@ -3,6 +3,7 @@ package com.github.pheonixfirewingz.farmersdream.world.item;
 import com.github.pheonixfirewingz.farmersdream.FarmersDream;
 import com.github.pheonixfirewingz.farmersdream.world.block.FarmersDreamBlock;
 import com.github.pheonixfirewingz.farmersdream.world.food.FarmersDreamFood;
+import com.google.common.base.CaseFormat;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.AliasedBlockItem;
@@ -13,8 +14,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 
+import static com.github.pheonixfirewingz.farmersdream.FarmersDream.MOD_LOGGER;
+
 public class FarmersDreamItems {
     public static final Item CHEDDAR = registerFood(FarmersDreamFood.CHEDDAR,"cheddar");
+    public static final Item COOKED_RICE = registerFood(FarmersDreamFood.COOKED_RICE,"cooked_rice");
 
     public static final Item LETTUCE = registerFood(FarmersDreamFood.LETTUCE,"lettuce");
     public static final Item TOMATO = registerFood(FarmersDreamFood.TOMATO,"tomato");
@@ -32,8 +36,11 @@ public class FarmersDreamItems {
     public static final Item SHALLOT = registerFood(FarmersDreamFood.SHALLOT,"shallot");
     public static final Item PARSNIP = registerFood(FarmersDreamFood.PARSNIP,"parsnip");
     public static final Item RADISH = registerFood(FarmersDreamFood.RADISH,"radish");
+    public static final Item HORSE_RADISH = registerFood(FarmersDreamFood.HORSE_RADISH,"horse_radish");
     public static final Item RUTABAGA = registerFood(FarmersDreamFood.RUTABAGA,"rutabaga");
     public static final Item BAIL = registerFood(FarmersDreamFood.BAIL,"bail");
+    public static final Item MINT = registerFood(FarmersDreamFood.MINT,"mint");
+    public static final Item OAT = registerFood(FarmersDreamFood.OAT,"oat");
 
     public static final Item TOMATO_SEEDS = registerSeeds(FarmersDreamBlock.CROP_TOMATO,"tomato");
     public static final Item LETTUCE_SEEDS = registerSeeds(FarmersDreamBlock.CROP_LETTUCE,"lettuce");
@@ -54,6 +61,8 @@ public class FarmersDreamItems {
     public static final Item RADISH_SEEDS = registerSeeds(FarmersDreamBlock.CROP_RADISH,"radish");
     public static final Item RUTABAGA_SEEDS = registerSeeds(FarmersDreamBlock.CROP_RUTABAGA,"rutabaga");
     public static final Item BAIL_SEEDS = registerSeeds(FarmersDreamBlock.CROP_BAIL,"bail");
+    public static final Item MINT_SEEDS = registerSeeds(FarmersDreamBlock.CROP_MINT,"mint");
+    public static final Item OAT_SEEDS = registerSeeds(FarmersDreamBlock.CROP_OAT,"oat");
 
     public static final Item ONION = registerEdibleSeeds(FarmersDreamBlock.CROP_ONION,FarmersDreamFood.ONION,"onion");
     public static final Item GARLIC = registerEdibleSeeds(FarmersDreamBlock.CROP_GARLIC,FarmersDreamFood.GARLIC,"garlic");
@@ -64,22 +73,24 @@ public class FarmersDreamItems {
     public static final Item CASSAVA = registerEdibleSeeds(FarmersDreamBlock.CROP_CASSAVA,FarmersDreamFood.CASSAVA,"cassava");
 
     private static Item registerSeeds(Block block, @NotNull String name) {
-        return register(new AliasedBlockItem(block,new FabricItemSettings()),"seeds_" + name);
+        return register(new AliasedBlockItem(block,new FabricItemSettings()),"seeds_" + name,name + " seeds");
     }
 
     private static Item registerEdibleSeeds(Block block,FoodComponent component,@NotNull String name) {
-        return register(new AliasedBlockItem(block,new FabricItemSettings().food(component)),"edible_seeds_" + name);
+        return register(new AliasedBlockItem(block,new FabricItemSettings().food(component)),"edible_seeds_" + name,name);
     }
 
     private static Item registerFood(FoodComponent component,@NotNull String name) {
-        return register(new FarmersDreamFoodItem(component),"food_" + name);
+        return register(new FarmersDreamFoodItem(component),"food_" + name,name);
     }
 
     private static Item registersNonFood(@NotNull String name) {
-        return register(new Item(new FabricItemSettings()), name);
+        return register(new Item(new FabricItemSettings()), name, name);
     }
 
-    private static Item register(@NotNull Item item,@NotNull String name) {
+    private static Item register(@NotNull Item item,@NotNull String name,@NotNull String normalizedName) {
+        //MOD_LOGGER.info("\"item.farmersdream." + name + "\":\"" + CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, normalizedName) + "\"");
+        //MOD_LOGGER.info(normalizedName.toUpperCase());
         return Registry.register(Registries.ITEM,new Identifier(FarmersDream.MOD_ID,name),item);
     }
 }

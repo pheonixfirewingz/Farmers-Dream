@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farmersdream:food_daikon"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "farmersdream:seeds_daikon"
+  }
+}

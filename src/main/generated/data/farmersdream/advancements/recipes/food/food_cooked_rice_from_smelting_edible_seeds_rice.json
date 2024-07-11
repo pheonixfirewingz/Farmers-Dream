@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_edible_seeds_rice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdream:edible_seeds_rice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:food_cooked_rice_from_smelting_edible_seeds_rice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_edible_seeds_rice",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:food_cooked_rice_from_smelting_edible_seeds_rice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

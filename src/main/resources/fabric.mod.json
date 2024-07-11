@@ -15,6 +15,9 @@
     "main": [
       "com.github.pheonixfirewingz.farmersdream.FarmersDream"
     ],
+    "client": [
+      "com.github.pheonixfirewingz.farmersdream.FarmersDreamClient"
+    ],
     "fabric-datagen": [
       "com.github.pheonixfirewingz.farmersdream.FarmersDreamDataGenerator"
     ]

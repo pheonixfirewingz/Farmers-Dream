@@ -4,6 +4,7 @@ import net.minecraft.item.FoodComponent;
 
 public class FarmersDreamFood {
     //TODO: we need to set the correct values
+    public static final FoodComponent COOKED_RICE = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent LETTUCE = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent TOMATO = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent CUCUMBER = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
@@ -29,4 +30,7 @@ public class FarmersDreamFood {
     public static final FoodComponent TURNIP = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent CASSAVA = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent BAIL = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
+    public static final FoodComponent MINT = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
+    public static final FoodComponent OAT = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
+    public static final FoodComponent HORSE_RADISH = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
 }
