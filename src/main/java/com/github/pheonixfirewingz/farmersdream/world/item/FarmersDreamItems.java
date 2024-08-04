@@ -3,7 +3,6 @@ package com.github.pheonixfirewingz.farmersdream.world.item;
 import com.github.pheonixfirewingz.farmersdream.FarmersDream;
 import com.github.pheonixfirewingz.farmersdream.world.block.FarmersDreamBlock;
 import com.github.pheonixfirewingz.farmersdream.world.food.FarmersDreamFood;
-import com.google.common.base.CaseFormat;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.AliasedBlockItem;
@@ -13,8 +12,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
-
-import static com.github.pheonixfirewingz.farmersdream.FarmersDream.MOD_LOGGER;
 
 public class FarmersDreamItems {
     public static final Item CHEDDAR = registerFood(FarmersDreamFood.CHEDDAR,"cheddar");
